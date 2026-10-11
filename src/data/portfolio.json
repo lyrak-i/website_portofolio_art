@@ -1,14 +1,14 @@
 [
   {
     "title": "Amiya",
-    "category": "Full Render",
+    "category": "Lineless",
     "image": "images/amiya.png",
     "alt": "Amiya wearing a dark coat and holding a plush toy, against a charcoal background.",
     "medium": "Character illustration"
   },
   {
     "title": "Bagpipe",
-    "category": "Full Render",
+    "category": "Lineless",
     "image": "images/bagpipe.png",
     "alt": "A red-haired character sitting on a yellow sports car in a sunlit street.",
     "medium": "Character illustration",
@@ -16,7 +16,7 @@
   },
   {
     "title": "Ceobe",
-    "category": "Full Render",
+    "category": "Lineless",
     "image": "images/Ceobe.png",
     "alt": "A blonde character in a white animal-eared cap, arms outstretched against a teal background.",
     "medium": "Character illustration"
@@ -30,14 +30,14 @@
   },
   {
     "title": "Gillberta",
-    "category": "Full Render",
+    "category": "Lineless",
     "image": "images/gillberta.png",
     "alt": "A close-up portrait of a brown-haired character with red eyes.",
     "medium": "Character portrait"
   },
   {
     "title": "Haruka",
-    "category": "Full Render",
+    "category": "Lineless",
     "image": "images/Haruka.png",
     "alt": "A close-up portrait of a pink-haired character with red eyes on a burgundy background.",
     "medium": "Character portrait"
@@ -51,7 +51,7 @@
   },
   {
     "title": "Lemuen",
-    "category": "Full Render",
+    "category": "Sketch",
     "image": "images/lemuen.png",
     "alt": "A pink-haired character in a dark outfit, raising an arm against a light background.",
     "medium": "Character illustration"
@@ -72,35 +72,35 @@
   },
   {
     "title": "Priestess",
-    "category": "Full Render",
+    "category": "Lineless",
     "image": "images/priestess.png",
     "alt": "A blonde character with amber eyes against a vivid red background.",
     "medium": "Character portrait"
   },
   {
     "title": "Shinobu",
-    "category": "Full Render",
+    "category": "Sketch",
     "image": "images/shinobu.png",
     "alt": "A brown-haired character with red eyes in a dark outfit.",
     "medium": "Character portrait"
   },
   {
-    "title": "Shinobu — Long Study",
-    "category": "Full Render",
+    "title": "Shinobu",
+    "category": "Lineless",
     "image": "images/shinobu 2.png",
     "alt": "A blonde character kneeling against a textured rose background.",
     "medium": "Character illustration"
   },
   {
     "title": "Skadi",
-    "category": "Full Render",
+    "category": "Sketch",
     "image": "images/skadi 2.png",
     "alt": "A character leaning into the frame with long silver hair and dark clothing.",
     "medium": "Character illustration"
   },
   {
     "title": "Vivlos",
-    "category": "Full Render",
+    "category": "Sketch",
     "image": "images/vivlos.png",
     "alt": "A cheerful purple-haired character making a heart shape with her hands.",
     "medium": "Character illustration"
