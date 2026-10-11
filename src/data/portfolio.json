@@ -1,56 +1,132 @@
 [
   {
-    "title": "Moonwell",
-    "category": "Lineless",
-    "image": "images/placeholder-lineless.svg",
-    "medium": "Digital painting",
-    "year": "2025",
-    "alt": "A figure kneeling beside a still pool under a large moon, painted without outlines.",
+    "title": "Amiya",
+    "category": "Full Render",
+    "image": "images/amiya.png",
+    "alt": "Amiya wearing a dark coat and holding a plush toy, against a charcoal background.",
+    "medium": "Character illustration"
+  },
+  {
+    "title": "Bagpipe",
+    "category": "Full Render",
+    "image": "images/bagpipe.png",
+    "alt": "A red-haired character sitting on a yellow sports car in a sunlit street.",
+    "medium": "Character illustration",
     "featured": true
   },
   {
-    "title": "Ember Study",
+    "title": "Ceobe",
     "category": "Full Render",
-    "image": "images/placeholder-full-render.svg",
-    "medium": "Digital painting",
-    "year": "2025",
-    "alt": "A cloaked character lit from below by a glowing lantern in warm amber light."
+    "image": "images/Ceobe.png",
+    "alt": "A blonde character in a white animal-eared cap, arms outstretched against a teal background.",
+    "medium": "Character illustration"
   },
   {
-    "title": "Morning Gestures",
-    "category": "Sketch",
-    "image": "images/placeholder-sketch.svg",
-    "medium": "Gesture sketches",
-    "year": "2024",
-    "alt": "A page of quick figure gesture drawings in soft graphite grey."
+    "title": "Gaen",
+    "category": "Full Render",
+    "image": "images/gaen.png",
+    "alt": "A small character seated atop a pile of screens in a bright, patterned room.",
+    "medium": "Character illustration"
   },
   {
-    "title": "Drift",
+    "title": "Gillberta",
+    "category": "Full Render",
+    "image": "images/gillberta.png",
+    "alt": "A close-up portrait of a brown-haired character with red eyes.",
+    "medium": "Character portrait"
+  },
+  {
+    "title": "Haruka",
+    "category": "Full Render",
+    "image": "images/Haruka.png",
+    "alt": "A close-up portrait of a pink-haired character with red eyes on a burgundy background.",
+    "medium": "Character portrait"
+  },
+  {
+    "title": "Kiss Shot",
+    "category": "Full Render",
+    "image": "images/kiss shot.png",
+    "alt": "A blonde character with amber eyes framed by a vivid red background.",
+    "medium": "Character portrait"
+  },
+  {
+    "title": "Lemuen",
+    "category": "Full Render",
+    "image": "images/lemuen.png",
+    "alt": "A pink-haired character in a dark outfit, raising an arm against a light background.",
+    "medium": "Character illustration"
+  },
+  {
+    "title": "M3",
+    "category": "Full Render",
+    "image": "images/m3.png",
+    "alt": "A black-haired character with neon green accents against a dark background.",
+    "medium": "Character illustration"
+  },
+  {
+    "title": "Pingwin",
+    "category": "Full Render",
+    "image": "images/pingwin.png",
+    "alt": "Three characters in winter clothes standing together in a snowy scene.",
+    "medium": "Character illustration"
+  },
+  {
+    "title": "Priestess",
+    "category": "Full Render",
+    "image": "images/priestess.png",
+    "alt": "A blonde character with amber eyes against a vivid red background.",
+    "medium": "Character portrait"
+  },
+  {
+    "title": "Shinobu",
+    "category": "Full Render",
+    "image": "images/shinobu.png",
+    "alt": "A brown-haired character with red eyes in a dark outfit.",
+    "medium": "Character portrait"
+  },
+  {
+    "title": "Shinobu — Long Study",
+    "category": "Full Render",
+    "image": "images/shinobu 2.png",
+    "alt": "A blonde character kneeling against a textured rose background.",
+    "medium": "Character illustration"
+  },
+  {
+    "title": "Skadi",
+    "category": "Full Render",
+    "image": "images/skadi 2.png",
+    "alt": "A character leaning into the frame with long silver hair and dark clothing.",
+    "medium": "Character illustration"
+  },
+  {
+    "title": "Vivlos",
+    "category": "Full Render",
+    "image": "images/vivlos.png",
+    "alt": "A cheerful purple-haired character making a heart shape with her hands.",
+    "medium": "Character illustration"
+  },
+  {
+    "title": "Animation Event UKM",
     "category": "Animation",
-    "image": "images/placeholder-animation.svg",
-    "medium": "Frame animation",
-    "year": "2025",
-    "alt": "A looping animation of a figure's hair and ribbons drifting in slow wind.",
+    "image": "images/animation-event-ukm-poster.jpg",
+    "alt": "Poster frame from the Animation Event UKM film.",
+    "medium": "Animation film",
     "animation": {
-      "src": "images/placeholder-animation.mp4",
+      "src": "images/animation-event-ukm.mp4",
       "type": "video/mp4",
-      "alt": "A looping study of gold ribbons shifting in slow wind."
+      "alt": "Animation Event UKM, a short animated film with sound."
     }
   },
   {
-    "title": "Idle Cycle",
+    "title": "Animation Intro TLC",
     "category": "Animation",
-    "image": "images/placeholder-animation-b.svg",
-    "medium": "Looping GIF",
-    "year": "2024",
-    "alt": "A looping idle animation where a character's cape gently rises and falls."
-  },
-  {
-    "title": "Violet — Arcane Client",
-    "category": "Previous Commissions",
-    "image": "images/placeholder-commission.svg",
-    "medium": "Commissioned portrait",
-    "year": "2025",
-    "alt": "A finished commission portrait of a violet-haired character against a deep blue field."
+    "image": "images/animation-intro-tlc-poster.jpg",
+    "alt": "Poster frame from the Animation Intro TLC film.",
+    "medium": "Animation film",
+    "animation": {
+      "src": "images/animation-intro-tlc.mp4",
+      "type": "video/mp4",
+      "alt": "Animation Intro TLC, an animated introduction with sound."
+    }
   }
 ]

@@ -5,6 +5,12 @@ dist/
 # Dependencies
 node_modules/
 
+# Original animation masters (optimized web copies are committed instead)
+/public/images/Animation Event UKM.mp4
+/public/images/Animation Intro TLC copyright (with Copyright BGM).mp4
+/public/images/Animation Event UKM.mp4
+/public/images/Animation Intro TLC copyright (with Copyright BGM).mp4
+
 # Environment
 .env
 .env.*
