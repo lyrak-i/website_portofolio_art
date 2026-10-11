@@ -18,35 +18,41 @@ const alt = piece.alt ?? `${piece.title} — ${piece.categoryLabel} artwork by L
   data-category={piece.categorySlug}
   data-title={piece.title}
   data-caption={caption}
+  data-video={piece.isVideo && piece.animation ? asset(piece.animation.src) : undefined}
+  data-video-poster={piece.isVideo && piece.animation ? asset(piece.image) : undefined}
 >
   <button
     type="button"
-    class="plate block w-full cursor-zoom-in text-left"
+    class:list={[
+      'plate block w-full text-left',
+      piece.isVideo ? 'cursor-pointer' : 'cursor-zoom-in',
+    ]}
     data-open={index}
-    aria-label={`View ${piece.title} full size`}
+    aria-label={piece.isVideo ? `Play ${piece.title}` : `View ${piece.title} full size`}
   >
-    <span class="block overflow-hidden bg-paper-deep">
+    <span class="relative block overflow-hidden bg-paper-deep">
+      <img
+        class:list={[
+          'block h-auto w-full transition-transform duration-500 ease-out',
+          piece.isVideo ? 'group-hover:scale-[1.01]' : 'group-hover:scale-[1.02]',
+        ]}
+        src={asset(piece.image)}
+        alt={alt}
+        loading={index < 3 ? 'eager' : 'lazy'}
+        decoding="async"
+      />
       {
-        piece.isVideo && piece.animation ? (
-          <video
-            class="block h-auto w-full"
-            src={asset(piece.animation.src)}
-            poster={asset(piece.image)}
-            muted
-            autoplay
-            loop
-            playsinline
-            preload="metadata"
-            aria-label={piece.animation.alt ?? alt}
-          />
-        ) : (
-          <img
-            class="block h-auto w-full transition-transform duration-500 ease-out group-hover:scale-[1.02]"
-            src={asset(piece.image)}
-            alt={alt}
-            loading={index < 3 ? 'eager' : 'lazy'}
-            decoding="async"
-          />
+        piece.isVideo && (
+          <span
+            class="pointer-events-none absolute inset-0 flex items-center justify-center bg-ink/15 transition-colors group-hover:bg-ink/25"
+            aria-hidden="true"
+          >
+            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-paper/90 text-ink shadow-sm transition-transform group-hover:scale-105">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M6.5 4.2v11.6c0 .5.55.8.98.53l9-5.8a.63.63 0 0 0 0-1.06l-9-5.8a.63.63 0 0 0-.98.53Z" />
+              </svg>
+            </span>
+          </span>
         )
       }
     </span>
