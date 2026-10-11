@@ -1,0 +1,93 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { bookingUrl, contactEmail } from '../data/socials';
+---
+
+<SiteLayout
+  title="Commissions"
+  description="Commission digital illustration or 2D animation from Lyrak. Read the process and terms, then request a slot through VGen."
+>
+  <article class="mx-auto max-w-[86rem] px-5 pt-12 sm:px-8 sm:pt-16 lg:px-12 lg:pt-24">
+    <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(17rem,0.48fr)] lg:gap-20">
+      <div class="reveal">
+        <p class="meta mb-5 text-accent">Commissions</p>
+        <h1 class="display max-w-3xl text-page">Let's make something<br class="hidden sm:block" /> that feels like yours.</h1>
+        <p class="mt-7 max-w-xl text-[1.05rem] leading-[1.85] text-ink-soft">
+          I take on digital illustration and short 2D animation commissions through VGen. The notes below are a draft—please check the current VGen listing for confirmed prices, availability and terms before booking.
+        </p>
+        <a
+          href={bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="meta mt-8 inline-flex min-h-12 items-center justify-center bg-accent px-6 text-white transition-colors hover:bg-ink"
+        >
+          View my VGen listing
+        </a>
+      </div>
+
+      <aside class="reveal h-fit border-l border-rule pl-6 lg:mt-16 lg:pl-8 [animation-delay:100ms]" aria-label="Commission availability">
+        <p class="meta text-ink-faint">Availability</p>
+        <p class="display mt-4 text-2xl">Please check VGen</p>
+        <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+          Current slots and prices are kept up to date on my booking page.
+        </p>
+      </aside>
+    </div>
+
+    <div class="mt-16 grid gap-x-14 gap-y-14 border-t border-rule pt-9 sm:grid-cols-2 lg:mt-24 lg:grid-cols-3">
+      <section>
+        <h2 class="display text-2xl">The process</h2>
+        <ol class="mt-5 space-y-4 text-sm leading-relaxed text-ink-soft">
+          <li class="flex gap-4"><span class="meta mt-0.5 text-accent">01</span><span>Choose a listing on VGen and read its current scope and price.</span></li>
+          <li class="flex gap-4"><span class="meta mt-0.5 text-accent">02</span><span>Send a request with your references, character details and the feeling you're after.</span></li>
+          <li class="flex gap-4"><span class="meta mt-0.5 text-accent">03</span><span>I'll review the brief and follow up through VGen with any questions.</span></li>
+          <li class="flex gap-4"><span class="meta mt-0.5 text-accent">04</span><span>Once accepted, I'll share progress and deliver the finished files through the platform.</span></li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 class="display text-2xl">A few notes</h2>
+        <ul class="mt-5 space-y-3 text-sm leading-relaxed text-ink-soft">
+          <li>Prices, delivery estimates, revision limits and payment terms are confirmed on each VGen listing.</li>
+          <li>Please only submit work you have the rights to commission. Share visual references you are allowed to use.</li>
+          <li>Personal-use rights are included only as stated in the accepted listing. Commercial use requires written agreement first.</li>
+          <li>I may decline requests that are outside my comfort zone or current capacity.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="display text-2xl">Contact</h2>
+        <p class="mt-5 text-sm leading-relaxed text-ink-soft">
+          VGen is the best place to discuss a project and keep everything together. For general questions, email is also open.
+        </p>
+        <a
+          class="mt-4 inline-block break-all border-b border-rule pb-1 text-sm text-ink transition-colors hover:border-accent hover:text-accent"
+          href={`mailto:${contactEmail}`}
+        >
+          {contactEmail}
+        </a>
+      </section>
+    </div>
+
+    <section class="mt-16 border-y border-rule py-8 lg:mt-20">
+      <div class="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="meta text-ink-faint">Ready to begin?</p>
+          <h2 class="display mt-2 text-3xl">Start with the brief.</h2>
+        </div>
+        <a
+          href={bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="meta inline-flex min-h-12 items-center justify-center border border-ink px-6 text-ink transition-colors hover:bg-ink hover:text-paper"
+        >
+          Request through VGen
+        </a>
+      </div>
+    </section>
+
+    <p class="mt-6 max-w-3xl text-xs leading-relaxed text-ink-faint">
+      Draft copy for editing. Replace or expand these notes with your final service-specific scope, policies, usage rights, payment arrangements and contact details before accepting commissions.
+    </p>
+  </article>
+</SiteLayout>

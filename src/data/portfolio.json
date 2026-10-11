@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Moonwell",
+    "category": "Lineless",
+    "image": "images/placeholder-lineless.svg",
+    "medium": "Digital painting",
+    "year": "2025",
+    "alt": "A figure kneeling beside a still pool under a large moon, painted without outlines.",
+    "featured": true
+  },
+  {
+    "title": "Ember Study",
+    "category": "Full Render",
+    "image": "images/placeholder-full-render.svg",
+    "medium": "Digital painting",
+    "year": "2025",
+    "alt": "A cloaked character lit from below by a glowing lantern in warm amber light."
+  },
+  {
+    "title": "Morning Gestures",
+    "category": "Sketch",
+    "image": "images/placeholder-sketch.svg",
+    "medium": "Gesture sketches",
+    "year": "2024",
+    "alt": "A page of quick figure gesture drawings in soft graphite grey."
+  },
+  {
+    "title": "Drift",
+    "category": "Animation",
+    "image": "images/placeholder-animation.svg",
+    "medium": "Frame animation",
+    "year": "2025",
+    "alt": "A looping animation of a figure's hair and ribbons drifting in slow wind.",
+    "animation": {
+      "src": "images/placeholder-animation.mp4",
+      "type": "video/mp4",
+      "alt": "A looping study of gold ribbons shifting in slow wind."
+    }
+  },
+  {
+    "title": "Idle Cycle",
+    "category": "Animation",
+    "image": "images/placeholder-animation-b.svg",
+    "medium": "Looping GIF",
+    "year": "2024",
+    "alt": "A looping idle animation where a character's cape gently rises and falls."
+  },
+  {
+    "title": "Violet — Arcane Client",
+    "category": "Previous Commissions",
+    "image": "images/placeholder-commission.svg",
+    "medium": "Commissioned portrait",
+    "year": "2025",
+    "alt": "A finished commission portrait of a violet-haired character against a deep blue field."
+  }
+]

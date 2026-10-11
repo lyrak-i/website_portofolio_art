@@ -1,0 +1,62 @@
+---
+import { asset } from '../data/media';
+import type { Artwork } from '../data/media';
+
+interface Props {
+  piece: Artwork;
+  index: number;
+}
+
+const { piece, index } = Astro.props;
+const plateNumber = String(index + 1).padStart(2, '0');
+const caption = [piece.medium, piece.year].filter(Boolean).join(' · ');
+const alt = piece.alt ?? `${piece.title} — ${piece.categoryLabel} artwork by Lyrak`;
+---
+
+<figure
+  class="piece group mb-6 break-inside-avoid sm:mb-10"
+  data-category={piece.categorySlug}
+  data-title={piece.title}
+  data-caption={caption}
+>
+  <button
+    type="button"
+    class="plate block w-full cursor-zoom-in text-left"
+    data-open={index}
+    aria-label={`View ${piece.title} full size`}
+  >
+    <span class="block overflow-hidden bg-paper-deep">
+      {
+        piece.isVideo && piece.animation ? (
+          <video
+            class="block h-auto w-full"
+            src={asset(piece.animation.src)}
+            poster={asset(piece.image)}
+            muted
+            autoplay
+            loop
+            playsinline
+            preload="metadata"
+            aria-label={piece.animation.alt ?? alt}
+          />
+        ) : (
+          <img
+            class="block h-auto w-full transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+            src={asset(piece.image)}
+            alt={alt}
+            loading={index < 3 ? 'eager' : 'lazy'}
+            decoding="async"
+          />
+        )
+      }
+    </span>
+  </button>
+
+  <figcaption class="mt-3 flex items-baseline gap-3">
+    <span class="meta shrink-0 text-ink-faint tabular-nums">{plateNumber}</span>
+    <span class="min-w-0 flex-1">
+      <span class="block truncate text-[0.95rem] text-ink">{piece.title}</span>
+      <span class="meta mt-1 block text-ink-faint">{caption || piece.categoryLabel}</span>
+    </span>
+  </figcaption>
+</figure>

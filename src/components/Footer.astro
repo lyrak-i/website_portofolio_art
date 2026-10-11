@@ -1,0 +1,55 @@
+---
+import { socials } from '../data/socials';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-24 border-t border-rule">
+  <div class="mx-auto max-w-[86rem] px-5 py-10 sm:px-8 lg:px-12">
+    <div class="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
+      <div>
+        <p class="display text-xl">Lyrak</p>
+        <p class="mt-2 max-w-xs text-sm leading-relaxed text-ink-soft">
+          Digital illustration and 2D animation, commissioned through VGen.
+        </p>
+      </div>
+
+      <nav aria-label="Social">
+        <p class="meta text-ink-faint">Elsewhere</p>
+        <ul class="mt-4 flex flex-wrap gap-x-6 gap-y-3">
+          {
+            socials.map((social) => (
+              <li>
+                <a
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group inline-flex items-baseline gap-2 text-[0.95rem] text-ink-soft transition-colors hover:text-accent"
+                >
+                  <span class="border-b border-transparent transition-colors group-hover:border-accent">
+                    {social.label}
+                  </span>
+                  {social.handle && (
+                    <span class="text-ink-faint">{social.handle}</span>
+                  )}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mt-10 flex flex-col gap-3 border-t border-rule/70 pt-6 text-ink-faint sm:flex-row sm:items-center sm:justify-between">
+      <p class="text-xs">&copy; {year} Lyrak. All artwork is original work.</p>
+      <nav aria-label="Footer">
+        <ul class="flex flex-wrap gap-x-5 gap-y-1">
+          <li><a class="meta hover:text-ink" href={`${base}/`}>Portfolio</a></li>
+          <li><a class="meta hover:text-ink" href={`${base}/about/`}>About</a></li>
+          <li><a class="meta hover:text-ink" href={`${base}/commissions/`}>Commissions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,50 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const links = [
+  { href: '/', label: 'Portfolio' },
+  { href: '/about/', label: 'About' },
+  { href: '/commissions/', label: 'Commissions' },
+];
+
+const currentPath = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === '/'
+    ? currentPath.replace(/\/$/, '') === base.replace(/\/$/, '')
+    : currentPath.startsWith(base + href);
+---
+
+<header class="border-b border-rule/70">
+  <div class="mx-auto flex max-w-[86rem] items-end justify-between gap-6 px-5 pt-7 pb-5 sm:px-8 lg:px-12">
+    <a href={`${base}/`} class="group shrink-0">
+      <span class="display block text-[1.55rem] leading-none sm:text-[1.8rem]">Lyrak</span>
+      <span class="meta mt-2 block text-ink-faint transition-colors group-hover:text-accent">
+        Digital artist &amp; 2D animator
+      </span>
+    </a>
+
+    <nav aria-label="Main">
+      <ul class="flex flex-wrap items-end justify-end gap-x-6 gap-y-2 sm:gap-x-9">
+        {
+          links.map((link) => (
+            <li>
+              <a
+                href={`${base}${link.href}`}
+                aria-current={isActive(link.href) ? 'page' : undefined}
+                class:list={[
+                  'meta relative block pb-1 transition-colors',
+                  isActive(link.href) ? 'text-ink' : 'text-ink-soft hover:text-ink',
+                ]}
+              >
+                {link.label}
+                {isActive(link.href) && (
+                  <span class="absolute inset-x-0 -bottom-px h-px bg-accent" aria-hidden="true" />
+                )}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
